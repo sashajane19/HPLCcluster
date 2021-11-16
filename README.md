@@ -1,5 +1,5 @@
 # HPLCcluster
-HPLC pigment clustering
+
 This code was created to cluster phytoplankton pigment groups from High Performance Liquid Chromatography (HPLC) pigment concentrations. 
 
 All code and data in this repository are freely available for use by anyone for any and all applications. If you use this code, we ask that you please cite one or both of the following papers where these methods were used: 
