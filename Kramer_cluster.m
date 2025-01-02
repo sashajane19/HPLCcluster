@@ -99,6 +99,11 @@ ax.YGrid = 'on';
 box on
 clear ax h D2 D3 deg deg2 labels Z2 Z3
 
+%Calculate the cophenetic distances and a corrcoef/pvalue for the dendrogram
+%Example using Spearman's rank coeff
+[c,D] = cophenet(Z3,D3);
+[rho,pval] = corr(D3',D','type','spearman');
+
 %For further analysis: cluster samples - change "maxclust" based on your dendrogram results
 %Need to also look at pigment concentrations in each cluster to check taxonomic meaning
 C = clusterdata(normchl,'distance','correlation','linkage','ward','maxclust',4);
